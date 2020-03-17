@@ -162,7 +162,7 @@ https://fancy-weather-react.netlify.com/
   }
 ``` 
 
-<details> 
+</details> 
 
 <details> 
   <summary>Материалы</summary>
