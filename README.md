@@ -138,6 +138,7 @@ https://fancy-weather-react.netlify.com/
 <details> 
   <summary>Коротко про асинхронные запросы</summary>
   
+  <p></p>
   JS-код для получения ссылки на изображение (ссылка выводится в консоль)
   - при помощи fetch
   
@@ -204,7 +205,8 @@ https://fancy-weather-react.netlify.com/
 
 <details> 
   <summary>API с примерами подключения</summary>
-  
+
+<p></p>
 **1. Geolocation API**    
 - https://ipinfo.io/ 
   - регистрируемся на сайте
@@ -282,4 +284,3 @@ Google Geocoding, Яндекс.Карты Геокодирование, Nominati
     `https://api.opencagedata.com/geocode/v1/json?q=Minsk&key=c6b6da0f80f24b299e08ee1075f81aa5&pretty=1&no_annotations=1`
   - [API Docs](https://opencagedata.com/api)
     </details>
-
