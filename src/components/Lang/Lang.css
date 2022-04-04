@@ -1,0 +1,46 @@
+.lang-btn {
+  width: 71px;
+}
+
+.lang-btn:active {
+  transform: none;
+}
+
+.lang-btn select {
+  height: 44px;
+  width: 71px;
+  cursor: pointer;
+  font-family: MontserratBold;
+  color: #fff;
+  font-size: 14px;
+  line-height: 44px;
+  text-transform: uppercase;
+  background-color: rgba(174, 181, 185, 0.5);
+  background-image: url("../../assets/svg/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: 46px 19px;
+  border: 0;
+  border-radius: 5px;
+  padding-left: 15px;
+  outline: none;
+  -webkit-appearance: none;
+  user-select: auto;
+}
+
+.lang-btn select option {
+  background-color: #00000088;
+  font-family: Montserrat;
+}
+
+.lang-btn select option:focus {
+  outline: none;
+}
+
+@media all and (max-width: 640px) {
+  .lang-btn,
+  .lang-btn select {
+    width: 78px;
+    height: 48px;
+    background-position: 50px 21px;
+  }
+}

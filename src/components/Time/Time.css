@@ -1,0 +1,25 @@
+.location-date {
+  min-height: 30px;
+  text-transform: none;
+  margin-bottom: 130px;
+}
+
+.location-day {
+  margin-right: 20px;
+}
+
+@media all and (max-width: 780px) {
+  .location-date {
+    display: flex;
+    justify-content: center;
+  }
+  .location-time {
+    min-width: 85px;
+  }
+}
+
+@media all and (max-width: 490px) {
+  .location-day {
+    margin-right: 10px;
+  }
+}

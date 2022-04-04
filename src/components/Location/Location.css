@@ -1,0 +1,31 @@
+.location-place {
+  min-height: 54px;
+  font-family: MontserratBold;
+  font-size: 44px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+@media all and (max-width: 780px) {
+  .location-place {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .location-place {
+    font-size: 28px;
+  }
+}
+
+@media all and (max-width: 490px) {
+  .location-place {
+    font-size: 24px;
+  }
+}

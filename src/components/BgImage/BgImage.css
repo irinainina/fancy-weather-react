@@ -1,0 +1,11 @@
+.reload-btn {
+  background-image: url("../../assets/svg/reload-image.svg");
+}
+
+@media all and (max-width: 640px) {
+  .reload-btn {
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+  }
+}

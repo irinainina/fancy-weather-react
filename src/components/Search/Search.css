@@ -1,0 +1,141 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("../../assets/fonts/Montserrat.woff2") format("woff2");
+}
+
+/*  Search */
+
+.search-panel {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 44px;
+  margin-left: auto;
+}
+
+.search-input {
+  box-sizing: border-box;
+  padding: 5px 0px 5px 20px;
+  margin: 0;
+  background-color: rgba(76, 82, 85, 0.4);
+  border: 1px solid rgba(228, 227, 227, 0.2);
+  border-right: 0;
+  width: 220px;
+  height: 44px;
+  border-radius: 5px 0 0 5px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+}
+
+.search-input:focus {
+  outline: 0;
+}
+
+.search-input::placeholder {
+  font-family: MontserratThin;
+  font-size: 14px;
+  color: #fff;
+}
+
+.voice {
+  width: 55px;
+  height: 44px;
+  background-image: url("../../assets/svg/mic.svg");
+  background-size: 14px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(76, 82, 85, 0.4);
+  border-top: 1px solid rgba(228, 227, 227, 0.2);
+  border-bottom: 1px solid rgba(228, 227, 227, 0.2);
+  cursor: pointer;
+}
+
+.search-button {
+  width: 100px;
+  height: 44px;
+  border-radius: 0 5px 5px 0;
+  border: 0;
+  background: rgba(174, 181, 185, 0.5);
+  font-family: MontserratBold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 44px;
+}
+
+.search-button:focus {
+  outline: 0;
+}
+
+.voice-active {
+  position: relative;
+}
+
+.voice-active:before,
+.voice-active:after {  
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  margin: auto;
+}
+
+.voice-active:before {
+  animation: pulse 1.5s infinite linear;
+}
+
+.voice-active:after {
+  animation: pulse 2s 0.4s infinite linear;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  33% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+@media all and (max-width: 780px) {
+  .search-panel {
+    margin-left: 0;
+  }
+  .search-input {
+    width: 165px;
+  }
+  .search-button {
+    width: 80px;
+    text-transform: capitalize;
+    font-family: Montserrat;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .search-button {
+    width: 80px;
+  }
+  .search-panel,
+  .search-input,
+  .search-button,
+  .voice {
+    height: 48px;
+    margin-bottom: 20px;
+  }
+}
